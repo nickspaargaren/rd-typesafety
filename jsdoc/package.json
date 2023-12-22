@@ -1,0 +1,9 @@
+{
+  "name": "jsdoc",
+  "scripts": {
+    "jsdoc": "jsdoc src/index.js"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
+  }
+}
