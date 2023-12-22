@@ -1,0 +1,13 @@
+{
+  "name": "flow",
+  "scripts": {
+    "build": "babel src/ -d out/",
+    "flow": "flow check --all"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-flow": "^7.23.3",
+    "flow-bin": "^0.225.1"
+  }
+}
