@@ -5,7 +5,8 @@
     ],
     "exclude": [
         "**/*.test.js",
-        "**/*.spec.js"
+        "**/*.spec.js",
+        "**/*.d.js"
     ],
     "reporter": [
         "text",
