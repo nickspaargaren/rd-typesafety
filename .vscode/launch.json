@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test and watch typed-javascript",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "test:watch",
+        "--",
+        "--inspect-brk"
+      ],
+      "cwd": "${workspaceRoot}/typed-javascript",
+      "autoAttachChildProcesses": true,
+      "restart": true,
+      "sourceMaps": true,
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Lint and fix typed-javascript",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "lint:fix"
+      ],
+      "cwd": "${workspaceRoot}/typed-javascript",
+      "autoAttachChildProcesses": true,
+      "restart": true,
+      "sourceMaps": true,
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test current file",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "--test",
+        "${file}"
+      ],
+      "cwd": "${workspaceRoot}",
+      "autoAttachChildProcesses": true,
+      "restart": true,
+      "sourceMaps": true,
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+    }
+  ]
+}

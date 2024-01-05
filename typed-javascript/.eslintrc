@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "jsdoc": {
+      "mode": "typescript"
+    }
+  },
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:jsdoc/recommended-error"
+  ],
+  "plugins": [
+    "jsdoc"
+  ],
+  "env": {
+    "es2023": true,
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "jsdoc/check-alignment": ["error"],
+    "jsdoc/check-indentation": ["error"],
+    "jsdoc/check-types": [
+      "error",
+      {
+        "unifyParentAndChildTypeChecks": true
+      }
+    ],
+    "jsdoc/no-undefined-types": ["error"],
+    "jsdoc/require-param-type": ["error"],
+    "jsdoc/require-property-type": ["error"],
+    "jsdoc/require-returns-type": ["error", {"contexts":["any"]}]
+  }
+}

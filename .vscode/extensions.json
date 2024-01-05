@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "ryu1kn.annotator",
+    "shakram02.bash-beautify",
+    "ryanluker.vscode-coverage-gutters",
+    "editorconfig.editorconfig",
+    "xabikos.javascriptsnippets",
+    "ms-vscode.vscode-typescript-next",
+    "shd101wyy.markdown-preview-enhanced",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "robertoachar.vscode-essentials-snippets",
+    "codeandstuff.package-json-upgrade",
+    "mikestead.dotenv",
+    "redhat.vscode-yaml",
+    "42Crunch.vscode-openapi",
+    "Arjun.swagger-viewer",
+    "DominicVonk.parameter-hints",
+    "GitHub.copilot"
+  ]
+}

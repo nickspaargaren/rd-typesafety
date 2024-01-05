@@ -1,0 +1,22 @@
+name: JSDoc
+on: push
+jobs:
+  type-check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./typed-javascript
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install modules
+        run: npm install
+      - name: ESLINT type check
+        run: npm run lint
+      - name: Typescript type check
+        run: npm run build
+      - name: Run the tests
+        run: npm test
